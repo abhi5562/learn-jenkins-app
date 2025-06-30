@@ -10,7 +10,8 @@ pipeline {
                 }
             }
             steps {
-                echo "Starting Build Process"
+                echo "Cleaning Workspace"
+                cleanWs()
                 sh '''
                     ls -la
                     node --version
