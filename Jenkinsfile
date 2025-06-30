@@ -10,6 +10,7 @@ pipeline {
                 }
             }
             steps {
+                echo "Starting Build Process"
                 sh '''
                     ls -la
                     node --version
